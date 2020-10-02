@@ -1,9 +1,12 @@
 class Curso(var nome: String,
             val codigo: Int,
-            var professorTitular: ProfessorTitular,
-            var professorAdjunto: ProfessorAdjunto,
             var maxAlunos: Int,
             ) {
+
+
+    var professorTitular: Professor? = null
+    var professorAdjunto: Professor? = null
+
     var listaDeAlunos = arrayListOf<Aluno>()
 
     fun adicionarUmAluno(umAluno: Aluno): Boolean{
@@ -15,4 +18,5 @@ class Curso(var nome: String,
     fun excluirAluno(umAluno: Aluno){
         listaDeAlunos.remove(umAluno)
     }
+
 }
