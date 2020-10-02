@@ -1,8 +1,8 @@
 class DigitalHouseManager() {
-    var listaDeAlunos = arrayListOf<Aluno>()
-    var listaDeProfessores = arrayListOf<Professor>()
-    var listaDeCursos = arrayListOf<Curso>()
-    var listaDeMatriculas = arrayListOf<Matricula>()
+    private var listaDeAlunos = arrayListOf<Aluno>()
+    private var listaDeProfessores = arrayListOf<Professor>()
+    private var listaDeCursos = arrayListOf<Curso>()
+    private var listaDeMatriculas = arrayListOf<Matricula>()
 
     fun registrarCurso(nome:String, codigoCurso: Int, quantidadeMaximaDeAlunos: Int){
         listaDeCursos.add(Curso(nome,codigoCurso,quantidadeMaximaDeAlunos))
