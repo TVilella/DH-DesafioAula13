@@ -1,2 +1,2 @@
-abstract class Pessoa(nome: String, sobrenome: String) {
+abstract class Pessoa(nome: String, sobrenome: String, codigo: Int) {
 }
