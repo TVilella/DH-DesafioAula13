@@ -48,7 +48,7 @@ class DigitalHouseManager() {
         }
 
         var indexAluno = -1
-        for(i in 0..listaDeCursos.size-1){
+        for(i in 0..listaDeAlunos.size-1){
             if(codigoAluno == listaDeAlunos[i].codigo) {
                 indexAluno = i
                 break

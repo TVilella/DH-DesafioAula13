@@ -1,3 +1,3 @@
-class Matricula(val aluno: Aluno, val curso: Curso) {
+data class Matricula(val aluno: Aluno, val curso: Curso) {
     val dataDeMatricula: String = java.time.LocalDateTime.now().toString()
 }
